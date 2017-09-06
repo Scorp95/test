@@ -9,10 +9,12 @@ class Token{
 	public function __construct($coffee, $username){
 		$this->coffee = (string)$coffee;
 		$this->username = (string)$username;
+		$this->crypto = "crc32";
 	}
 
 	public function __toString(){
-		return substr(md5(rand(strlen($this->coffee . $this->username), 0xc0ffee)), 10);
+		$x = $this->crypto;
+		return substr(md5(rand($x($this->coffee . $this->username), 0xc0ffee)), 10);
 	}	
 
 }
