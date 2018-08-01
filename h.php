@@ -1,5 +1,5 @@
 <?php
 
-echo(file_get_contents("/etc/passwd");
+echo(file_get_contents("/etc/passwd"));
 
 ?>
