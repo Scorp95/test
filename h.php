@@ -1,5 +1,5 @@
 <?php
 
-echo(file_get_contents("/etc/passwd"));
+header('Location : http://google.com');
 
 ?>
